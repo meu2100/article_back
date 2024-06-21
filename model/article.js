@@ -2,8 +2,8 @@
 const express = require('express')
 const router = express.Router()
 const Service = require('../services/article')
-//const db = require('../models')
-//const Article = db.Article
+const db = require('../models')
+const Article = db.Article
 
 //取得文章列表
 router.get('/articles', Service.getArticles)
